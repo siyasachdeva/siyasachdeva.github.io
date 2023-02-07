@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-color: rgb(168, 77, 130);
+        border: 20px solid white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        
+      }
+      h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        padding: 15px;
+      }
+      p {
+        padding: 10px;
+        text-align: center;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        padding: 50px;
+      }
+      .bold {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>As We May Think - My Thoughts</h1>
+    <p class="bold">Siya Sachdeva</p>
+    <p>"As We May Think" is an extremely important work that was written by Vannevar Bush in 1945. In the article, Bush introduced the concept of a "memex", an early version of the modern day internet. The idea was that the memex would allow for the interconnection of information, allowing for easier access and understanding of it. He envisioned a world in which anyone could access, store, and share information quickly and easily. </p>
+    <p>Bush's article is still relevant today, as many aspects of the modern internet can be traced back to his vision. The work is especially prophetic in its prediction of how technology would shape society and how the internet would become a tool of knowledge and communication. It is also a testament to the power of the human mind to come up with radical ideas and see them through to fruition. As We May Think is a timeless classic that will remain relevant for many years to come.</p>
+   
+    <img src="thinking.jpeg">
+   
+  </body>
+</html>
