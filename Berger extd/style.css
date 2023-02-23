@@ -1,0 +1,35 @@
+.positioned{
+    position: static;
+    top: 50px;
+    right: 80px;
+    bottom: 40px;
+    background: rgb(176, 209, 186);
+    align: center;
+}
+
+
+
+  body{
+    background-color: rgb(250, 250, 250);
+    margin: auto;
+    justify-content: center;
+    width: 1200px;
+    margin-top: 10 ;
+  }
+
+  p {
+    position: static;
+    background: rgb(240, 160, 221);
+    border: 6px solid black;
+    padding: 10px;
+    margin: 10px;
+    align: center;
+  } 
+
+  details {
+    background: rgb(255, 255, 255);
+    border: 10px solid black;
+    padding: 50px;
+    margin: 20px;
+    align: center;
+  }
