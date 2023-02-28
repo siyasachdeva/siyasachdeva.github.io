@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(255, 232, 204);
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 5px rgb(79, 53, 21);
+    background-color: rgb(197, 128, 78);
+    margin: 60px;
+    padding: 8vw;
+    display:flex;
+    justify-content: space-around;
+    border-radius: 100px;
+    flex-direction:column;
+
+
+}
+
+h2{
+    border-radius: 15px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(242, 179, 106);
+    border: solid 5px rgb(119, 87, 53);
+    padding: 4vw;
+    margin: 10px;
+    border-radius: 100px;
+}
+
