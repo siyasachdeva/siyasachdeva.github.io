@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Who is Olia Lialina</title>
+	<style>
+		body {
+			background-color: rgb(252, 252, 252);
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			border: 2px solid white;
+			margin: 50px auto;
+			max-width: 800px;
+			padding: 20px;
+		}
+		h1 {
+			font-size: 36px;
+			font-weight: bold;
+			margin-top: 0;
+		}
+		p {
+			font-size: 18px;
+			opacity: 0;
+			animation: fadeIn 2s ease forwards;
+		}
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-top: 20px;
+		}
+		.col {
+			flex: 1;
+			margin: 10px;
+			opacity: 0;
+			animation: fadeIn 2s ease forwards;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Who is Olia Lialina</h1>
+		<p>Olia Lialina is a Russian media artist, critic, and curator best known for her groundbreaking work in the field of net art. She was born in Moscow, Russia, on August 4, 1971. Lialina's work is concerned with issues of online identity, digital aesthetics, and the cultural impact of the internet.</p>
+		<p>Lialina was a co-founder of the influential "net.art" movement, which emerged in the mid-1990s as an online artist collective. She has created numerous web-based projects, including the seminal work of net art "My Boyfriend Came Back from the War" (1996). Her work has been shown at the ZKM Center for Art and Media in Karlsruhe, Germany, the New Museum in New York, and the Stedelijk Museum in Amsterdam.</p>
+		<p>In addition to her artistic practice, Lialina is a professor at Stuttgart's Merz Akademie, where she teaches new media art. She has written extensively about net art and digital culture, and her work has appeared in a variety of academic and artistic journals.</p>
+		<div class="row">
+			<div class="col">
+				<img src="page1image2.webp" alt="Image 1">
+			</div>
+			<div class="col">
+				<img src="page1image1.jpeg" alt="Image 2">
+			</div>
+			<div class="col">
+				<img src="page1image3" alt="Image 3">
+			</div>
+		</div>
+	</div>
+	<script>
+		const paragraphs = document.querySelectorAll('p');
+		for (let i = 0; i < paragraphs.length; i++) {
+			paragraphs[i].style.animationDelay = i * 0.
