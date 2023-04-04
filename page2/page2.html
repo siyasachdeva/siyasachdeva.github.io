@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Flip Images</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			padding: 20px;
+		}
+
+		.flip-card {
+			background-color: transparent;
+			margin: 10px;
+			perspective: 1000px;
+			position: relative;
+			height: 600px;
+			width: 500px;
+			border-radius: 10px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+		}
+
+		.flip-card-inner {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			transition: transform 0.6s;
+			transform-style: preserve-3d;
+		}
+
+		.flip-card:hover .flip-card-inner {
+			transform: rotateY(180deg);
+		}
+
+		.flip-card-front, .flip-card-back {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			backface-visibility: hidden;
+		}
+
+		.flip-card-front img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.flip-card-back {
+			transform: rotateY(180deg);
+			background-color: #f9f9f9;
+			color: black;
+			padding: 100px;
+			text-align: center;
+			font-size: 18px;
+			line-height: 1.6;
+			overflow-y: scroll;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<img src="page2picture1.webp">
+				</div>
+				<div class="flip-card-back">
+					<p>"My Boyfriend Came Back from the War" is a seminal work of net art created in 1996 by Olia Lialina. It is a hypertext narrative about a soldier returning from war and reuniting with his girlfriend. The artwork is accessed via a web browser, and the viewer proceeds through a series of interconnected pages or "rooms" that reveal various aspects of the story. The artwork's pages are made up of simple, pixelated graphics and text, with links leading to additional pages that reveal different aspects of the story. The story is told nonlinearly, with different pages presenting different perspectives on the events that unfold. The viewer can read the story in any order they want, creating a unique and personalized reading experience.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="flip-card">
+			<div class="flip-card-inner">
+				<div class="flip-card-front">
+					<img src="page2picture2.webp">
+				</div>
+				<div class="flip-card-back">
+					<p>The use of visual and textual elements to create a haunting and emotionally charged atmosphere is one of the most striking aspects of "My Boyfriend Came Back from the War." The artwork's pixelated graphics and fragmented, non-linear narrative style create a sense of unease and confusion, mirroring the trauma and dislocation experienced by the characters in the story. Memory, trauma, and the impact of technology on human relationships are also explored in the artwork. Lialina draws attention to the ways in which technology mediates our experiences of the world and shapes our memories through the digital tools we use to record and share them by telling the story through a series of interconnected web pages. "My Boyfriend Came Back from the War" is widely regarded as a landmark in net art and has been shown in numerous museums and galleries around the world. It has also been cited as an influence on subsequent generations of digital media artists and writers, and has played a significant role in the development of net art as a distinct art form.</p>
