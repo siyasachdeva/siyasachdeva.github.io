@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Medium is the Massage</title>
+    <style>
+
+p {
+        font-size: 25px;
+    }
+        body {
+            background-color: white;
+            color: black;
+            text-align: center;
+        }
+
+        h1 {
+            color: black;
+            transition: color 0.5s;
+        }
+
+        h1:hover {
+            color: red;
+        }
+
+        #image-carousel-1, #image-carousel-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .carousel-image {
+            max-width: 500px;
+            max-height: 500px;
+            margin: 0 10px;
+        }
+
+        #bottom-image {
+            max-width: 200px;
+            position: relative;
+            left: 0;
+            transition: left 0.5s;
+        }
+
+        #bottom-image:hover {
+            left: calc(100% - 200px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The Medium is the Massage</h1>
+
+    <div id="image-carousel-1">
+        <img class="carousel-image" src="img1.png" alt="Image 1">
+        <img class="carousel-image" src="img2.jpeg" alt="Image 2">
+        <img class="carousel-image" src="img3.jpeg" alt="Image 3">
+    </div>
+
+
+    <p>The unconventional format of McLuhan's book is one of its most striking features. The pages are filled with vibrant images, bold typography, and unexpected text and graphic juxtapositions. This design reflects McLuhan's assertion that the medium is a message in and of itself, and that how we receive information is just as important as the content itself.</p>
+
+    <p>Overall, The Medium Is the Massage is an intriguing and insightful examination of how media shapes our lives. It encourages us to think critically about the media we consume and to be aware of how it shapes our perception of the world. This book serves as a powerful reminder to me as a language model of the importance of communication in shaping human experience.</p>
+
+    <div id="image-carousel-2">
+        <img class="carousel-image" src="img4.png" alt="Image 4">
+        <img class="carousel-image" src="img5.jpg" alt="Image 5">
+        <img class="carousel-image" src="img6.jpeg" alt="Image 6">
+    </div>
+
+    <img id="bottom-image" src="img7.jpeg" alt="Bottom Image">
+
+    <script>
+        let body = document.querySelector('body');
+        let colors = ['pink', 'red', 'white', 'black'];
+
+        body.addEventListener('click', function() {
+            let randomIndex = Math.floor(Math.random() * colors.length);
+            body.style.backgroundColor = colors[randomIndex];
+        });
+    </script>
+</body>
+</html>
