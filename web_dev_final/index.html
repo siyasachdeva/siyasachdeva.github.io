@@ -1,0 +1,159 @@
+<! -- SOURCES -->
+<! -- https://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup#:~:text=The%20script%20tag%20should%20always,and%20later%20JavaScript%20will%20load.-->
+<! -- https://developer.mozilla.org/en-US/docs/Web/API/Element/remove-->
+<! -- https://www.freecodecamp.org/news/how-to-center-an-absolute-positioned-element/-->
+<! -- https://stackoverflow.com/questions/857618/javascript-how-to-extract-filename-from-a-file-input-control-->
+<! -- https://befused.com/javascript/get-filename-url/ -->
+<! -- https://www.freecodecamp.org/news/how-to-center-an-absolute-positioned-element/-->
+<! -- https://www.javascripttutorial.net/dom/css/check-if-an-element-contains-a-class/ -->
+<! -- video source: https://www.pexels.com/video/hearts-on-pink-background-5085170/ -->
+
+<!DOCTYPE html>
+<html>
+	
+<head>
+
+	<title>Chess Game</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+
+	<style>
+		h1 {
+		  font-family: Copperplate, fantasy;
+		}
+		.center {
+        text-align: center;
+      }
+
+      .middle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+	  h1 {
+        font-size: 50px;
+      }
+	  
+
+	  #video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+      }
+
+      #video-container video {
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+      }
+
+      h1 {
+        color: white;
+        font-size: 48px;
+        text-align: center;
+        margin-top: 50px;
+      }
+	  
+	  </style>
+  
+</head>
+<body>
+
+	<h1 class="center">Siya's Chesseria</h1>
+
+	<div id="video-container">
+		<video autoplay muted loop>
+		  <source src="video_back.mp4" type="video/mp4">
+		</video>
+	  </div>
+   
+    </div>
+	<div class="chessboard">
+		<div class="row">
+			<div class="square black" data-position="a8"><img src="black_rook.png"></div>
+			<div class="square white" data-position="b8"><img src="black_knight.png"></div>
+			<div class="square black" data-position="c8"><img src="black_bishop.png"></div>
+			<div class="square white" data-position="d8"><img src="black_queen.png"></div>
+			<div class="square black" data-position="e8"><img class="king" src="black_king.png"></div>
+			<div class="square white" data-position="f8"><img src="black_bishop.png"></div>
+			<div class="square black" data-position="g8"><img src="black_knight.png"></div>
+			<div class="square white" data-position="h8"><img src="black_rook.png"></div>
+		</div>
+		<div class="row">
+			<div class="square white" data-position="a7"><img src="black_pawn.png"></div>
+			<div class="square black" data-position="b7"><img src="black_pawn.png"></div>
+			<div class="square white" data-position="c7"><img src="black_pawn.png"></div>
+			<div class="square black" data-position="d7"><img src="black_pawn.png"></div>
+			<div class="square white" data-position="e7"><img src="black_pawn.png"></div>
+			<div class="square black" data-position="f7"><img src="black_pawn.png"></div>
+			<div class="square white" data-position="g7"><img src="black_pawn.png"></div>
+			<div class="square black" data-position="h7"><img src="black_pawn.png"></div>
+		</div>
+		<div class="row">
+			<div class="square black" data-position="a6"></div>
+			<div class="square white" data-position="b6"></div>
+			<div class="square black" data-position="c6"></div>
+			<div class="square white" data-position="d6"></div>
+			<div class="square black" data-position="e6"></div>
+			<div class="square white" data-position="f6"></div>
+			<div class="square black" data-position="g6"></div>
+			<div class="square white" data-position="h6"></div>
+		</div>
+		<div class="row">
+			<div class="square white" data-position="a5"></div>
+			<div class="square black" data-position="b5"></div>
+			<div class="square white" data-position="c5"></div>
+			<div class="square black" data-position="d5"></div>
+			<div class="square white" data-position="e5"></div>
+			<div class="square black" data-position="f5"></div>
+			<div class="square white" data-position="g5"></div>
+			<div class="square black" data-position="h5"></div>
+		</div>
+		<div class="row">
+			<div class="square black" data-position="a4"></div>
+			<div class="square white" data-position="b4"></div>
+			<div class="square black" data-position="c4"></div>
+			<div class="square white" data-position="d4"></div>
+			<div class="square black" data-position="e4"></div>
+			<div class="square white" data-position="f4"></div>
+			<div class="square black" data-position="g4"></div>
+			<div class="square white" data-position="h4"></div>
+		</div>
+		<div class="row">
+			<div class="square white" data-position="a3"></div>
+			<div class="square black" data-position="b3"></div>
+			<div class="square white" data-position="c3"></div>
+			<div class="square black" data-position="d3"></div>
+			<div class="square white" data-position="e3"></div>
+			<div class="square black" data-position="f3"></div>
+			<div class="square white" data-position="g3"></div>
+			<div class="square black" data-position="h3"></div>
+		</div>
+		<div class="row">
+			<div class="square black" data-position="a2"><img src="white_pawn.png"></div>
+			<div class="square white" data-position="b2"><img src="white_pawn.png"></div>
+			<div class="square black" data-position="c2"><img src="white_pawn.png"></div>
+			<div class="square white" data-position="d2"><img src="white_pawn.png"></div>
+			<div class="square black" data-position="e2"><img src="white_pawn.png"></div>
+			<div class="square white" data-position="f2"><img src="white_pawn.png"></div>
+			<div class="square black" data-position="g2"><img src="white_pawn.png"></div>
+			<div class="square white" data-position="h2"><img src="white_pawn.png"></div>
+		</div>
+		<div class="row">
+			<div class="square white" data-position="a1"><img src="white_rook.png"></div>
+			<div class="square black" data-position="b1"><img src="white_knight.png"></div>
+			<div class="square white" data-position="c1"><img src="white_bishop.png"></div>
+			<div class="square black" data-position="d1"><img src="white_queen.png"></div>
+			<div class="square white" data-position="e1"><img class="king" src="white_king.png"></div>
+			<div class="square black" data-position="f1"><img src="white_bishop.png"></div>
+			<div class="square white" data-position="g1"><img src="white_knight.png"></div>
+			<div class="square black" data-position="h1"><img src="white_rook.png"></div>
+		</div>
+	</div>
+	<img class="win hidden" src="winner.JPG" alt="You Win">
+</body>
+</html>
